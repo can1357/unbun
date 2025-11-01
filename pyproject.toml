@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unbun"
+version = "0.1.0"
+description = "Extract JavaScript bundles from Bun standalone executables."
+readme = "README.md"
+license = "MIT"
+authors = [
+  { name = "can1357" }
+]
+requires-python = ">=3.9"
+keywords = ["bun", "reverse-engineering", "bundler"]
+classifiers = [
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools"
+]
+
+[project.urls]
+Homepage = "https://github.com/can1357/unbun"
+Repository = "https://github.com/can1357/unbun"
+
+[project.scripts]
+unbun = "unbun:cli"

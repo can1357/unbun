@@ -12,10 +12,21 @@ exact files that were packaged with the binary.
   installed, `unbun` will run Prettier over each extracted JavaScript file
   unless you pass `--no-prettier`.
 
+## Installation
+
+You can install the CLI straight from GitHub:
+
+```sh
+pip install git+https://github.com/can1357/unbun.git
+```
+
+This exposes the `unbun` command on your `PATH`. If you prefer a local copy,
+clone the repo and run `pip install .`.
+
 ## Usage
 
 ```sh
-python3 unbun.py <binary> bundles/
+unbun <binary> bundles/
 ```
 
 By default the script writes prettified `.js` files into the target directory.

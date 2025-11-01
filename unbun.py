@@ -196,3 +196,8 @@ def main(argv: List[str]) -> int:
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1:]))
+
+
+def cli() -> None:
+    """Entry point for the console script."""
+    sys.exit(main(sys.argv[1:]))
